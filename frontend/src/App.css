@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, arial, sans-serif, 'lucida grande';
+}
+
+/* CSS của menu */
+.header {
+    padding: 0 85px;
+    height: 100px;
+}
+
+.header img {
+    height: 80px;
+
+}
+.header__logo {
+height: 100%;
+}
+
+.div-img {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+.div-img .trangchu{
+    display: none;
+}
+/* .header__navbar .trangchu{
+    display: block;
+} */
+.user {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.icon-user {
+    margin: 0 18px;
+}
+
+.header__navbar {
+    margin-top: 24px;
+    height: 46px;
+    display: flex;
+  
+}
+
+
+.navbar__items {
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navbar__item {
+    margin: 0 12px;
+    font-size: 18px;
+    padding: 10px 0 15px 0;
+    cursor: pointer;
+}
+.trangchu{
+    margin: 0 12px;
+    font-size: 18px;
+    padding: 10px 0 15px 0;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.navbar__item a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar__item:hover a {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.header-active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100px;
+    background: white;
+    padding: 0;
+
+}
+.header-active .div-img img{
+    display: none;
+}
+.header-active .div-img .trangchu{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+.header-active .header__navbar .navbar__items{
+    width: 100%;
+    justify-content: space-around;
+}
+.header-active .header__navbar .trangchu{
+    display: none;
+}
+.banner {
+    width: 100%;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.menu img {
+    margin-bottom: 0px 15px -20px;
+}
+
+.menu img:hover {
+    opacity: 0;
+}
+
+/* CSS của slice */
+.slice {
+    position: relative;
+}
+
+.btn:hover {
+    background-color: #464444;
+}
+
+.btn {
+    padding: 15px 55px;
+    background-color: #758dba;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+
+
+/* CSS của phần khung thông tin khách hàng */
+.txt{
+    padding-left: 470px;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+
+.area{
+    margin-left: 470px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 500px;
+}
+
+/* CSS của footer */
+.about{
+    margin-top: 50px;
+    width: 400px;
+    float: left;
+}
+
+.about #trai{
+    width: 240px;
+    height: 38px;
+    margin-right: 20px;
+    float: left;
+    margin-top: 15px;
+}
+
+.about #phai{
+    font-size: 16px;
+    width: 245px;
+    float: left;
+    color: #6c6666;
+
+}
+
+.contact{
+    margin-top: 50px;
+    width: 300px;
+    float: left;
+}
+
+.contact p{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #6c6666;
+}
+
+.contact span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link{
+    margin-top: 50px;
+    width: 500px;
+    float: left;
+}
+
+.link p{
+    font-size: 16px ;
+    margin-top: 45px;
+    color: #6c6666;
+}
+
+
+.thongtin{
+  margin: 24px 0 32px 0;
+}
+
+.select-swap{
+    display: flex;
+}
+.product__amount-item{
+    display: flex;
+}
+
+
+
+
+
+  /* ======= Toast message ======== */
+
+  #toast {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    z-index: 999999;
+  }
+  
+  .toast {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px 0;
+    min-width: 400px;
+    max-width: 450px;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    transition: all linear 0.3s;
+    opacity: 1;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(calc(100% + 32px));
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .toast--success {
+    border-color: #47d864;
+  }
+  
+  .toast--success .toast__icon {
+    color: #47d864;
+  }
+  
+  .toast--info {
+    border-color: #2f86eb;
+  }
+  
+  .toast--info .toast__icon {
+    color: #2f86eb;
+  }
+  
+  .toast--warning {
+    border-color: #ffc021;
+  }
+  
+  .toast--warning .toast__icon {
+    color: #ffc021;
+  }
+  
+  .toast--error {
+    border-color: #ff623d;
+  }
+  
+  .toast--error .toast__icon {
+    color: #ff623d;
+  }
+  
+  .toast + .toast {
+    margin-top: 24px;
+  }
+  
+  .toast__icon {
+    font-size: 24px;
+  }
+  
+  .toast__icon,
+  .toast__close {
+    padding: 0 16px;
+  }
+  
+  .toast__body {
+    flex-grow: 1;
+  }
+  
+  .toast__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .toast__msg {
+    font-size: 14px;
+    color: #888;
+    margin-top: 6px;
+    line-height: 1.5;
+  }
+  
+  .toast__close {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
