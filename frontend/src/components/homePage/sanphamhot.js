@@ -1,46 +1,43 @@
 import styled from 'styled-components';
-import Logo from "./../images/logo/NHOM6.png"
+import Logo from "./../../images/logo/NHOM6.png"
 
-import ambush1 from "./../images/product/ambush1.jpg"
-import aohoodie1 from "./../images/product/aohoodie1.jpg"
-import aonguc from "./../images/product/ao-nguc.jpg"
-import aogio from "./../images/product/Ao_Gio_Adicolor_Classics_DJen_GN2780_21_model.jpg"
+import vaymidi1 from "./../../images/product/vaymidi1.jpg"
 import "./sanpham.css"
 
-function Sanphammoi() {
-    const sanphammoi = [
+function Sanphamhot() {
+    const sanphamhot = [
         {
             id: 1,
-            token: "sanphammoi-1",
-            name: "áo bloolyn",
-            img: ambush1,
-            price: 800000,
-        },
-        {
-            id: 2,
-            token: "sanphammoi-2",
-            name: "hoodie adidas",
-            img: aohoodie1,
+            token: "sanphamhot-1",
+            name: "Giày giả váy",
+            img: vaymidi1,
             price: 900000,
         },
         {
-            id: 3,
-            token: "sanphammoi-3",
-            name: "áo khoác adidas",
-            img: aogio,
+            id: 2,
+            token: "sanphamhot-2",
+            name: "giày ultra",
+            img: vaymidi1,
             price: 1000000,
         },
         {
+            id: 3,
+            token: "sanphamhot-3",
+            name: "balo",
+            img: vaymidi1,
+            price: 800000,
+        },
+        {
             id: 4,
-            token: "sanphammoi-4",
-            name: "đồ gym",
-            img: aonguc,
-            price: 500000,
+            token: "sanphamhot-4",
+            name: "túi chéo",
+            img: vaymidi1,
+            price: 600000,
         },
     ];
     const renderProduct = () => {
-        return sanphammoi.map((item, i) => {
-            return (<div className="col-lg-3 col-md-6 col-sm-12 mb-20">
+        return sanphamhot.map((item, i) => {
+            return (<div className="col-lg-3 col-md-6 col-sm-12 mb-30">
                 <div className="product__new-item">
                     <div className="card" style={{ width: "100%" }}>
                         <div>
@@ -68,19 +65,19 @@ function Sanphammoi() {
                                     </div>
                                     <div className="select-swap">
                                         <div className="swatch-element" data-value="38" >
-                                            <input type="radio" className="variant-1" id={`swatch-sanphamoi-${item.id}-1`} name="mau"
+                                            <input type="radio" className="variant-1" id={`swatch-sanphamhot-${item.id}-1`} name="mau"
                                                 value="S" />
-                                            <label for={`swatch-sanphamoi-${item.id}-1`} className="sd"><span>38</span></label>
+                                            <label for={`swatch-sanphamhot-${item.id}-1`} className="sd"><span>38</span></label>
                                         </div>
                                         <div className="swatch-element" data-value="39">
-                                            <input type="radio" className="variant-1" id={`swatch-sanphamoi-${item.id}-2`} name="mau"
+                                            <input type="radio" className="variant-1" id={`swatch-sanphamhot-${item.id}-2`} name="mau"
                                                 value="M" />
-                                            <label for={`swatch-sanphamoi-${item.id}-2`} className="sd"><span>39</span></label>
+                                            <label for={`swatch-sanphamhot-${item.id}-2`} className="sd"><span>39</span></label>
                                         </div>
                                         <div className="swatch-element" data-value="40">
-                                            <input type="radio" className="variant-1" id={`swatch-sanphamoi-${item.id}-3`} name="mau"
+                                            <input type="radio" className="variant-1" id={`swatch-sanphamhot-${item.id}-3`} name="mau"
                                                 value="L" />
-                                            <label for={`swatch-sanphamoi-${item.id}-3`} className="sd"><span>40</span></label>
+                                            <label for={`swatch-sanphamhot-${item.id}-3`} className="sd"><span>40</span></label>
                                         </div>
                                     </div>
                                 </div>
@@ -109,13 +106,11 @@ function Sanphammoi() {
 
     return (
         <div>
-
-            <div className="product__new">
-                <h3 className="product__ne title-product">Sản phẩm mới</h3>
-                <div className="row" id="listProductNew">
+            <div className="product__sale">
+                <h3 className="product__sale title-product">Top sản phẩm hot</h3>
+                <div className="row" id="listProductSale">
                     {renderProduct()}
                 </div>
-
             </div>
 
 
@@ -123,4 +118,4 @@ function Sanphammoi() {
     );
 }
 
-export default Sanphammoi;
+export default Sanphamhot;

@@ -1,10 +1,9 @@
-import styled from 'styled-components';
-import Logo from "./../images/logo/NHOM6.png"
 import Sanphamphobien from './sanphamphobien';
 import HomeBanner from './banner';
-import "./index.css"
+import "./../index.css"
 import Sanphammoi from './sanphammoi';
 import Sanphamhot from './sanphamhot';
+import Cothebansethich from './cothebanthich';
 
 function BodyHomePage() {
     return (
@@ -18,6 +17,7 @@ function BodyHomePage() {
                         <Sanphamphobien />
                         <Sanphammoi />
                         <Sanphamhot />
+
                         <section className="awe-section-9">
                             <div className="section_policy clearfix">
                                 <div className="col-12">
@@ -78,12 +78,7 @@ function BodyHomePage() {
                                 </div>
                             </div>
                         </section>
-                        <div className="product__yml">
-                            <h3 className="product__yml title-product">Có thể bạn sẽ thích</h3>
-                            <div className="row" id="listProductYml">
-
-                            </div>
-                        </div>
+                        <Cothebansethich />
                     </div>
                 </div>
             </div>

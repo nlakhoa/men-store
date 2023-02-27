@@ -22,17 +22,17 @@ function Header() {
                             <li className="navbar__item"> <Link to="/quan" className="">Quần thời trang</Link>
 
                             </li>
-                            <li className="navbar__item"> <Link to="/giay" className="">Giày</Link>
+                            <li className="navbar__item"> <Link to="/giay" className="">Giày thời trang</Link>
 
                             </li>
-                            <li className="navbar__item"> <Link href="#" className="">Cộng đồng</Link>
+                            <li className="navbar__item"> <Link to="/congdong" className="">Cộng đồng</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="col-xl-3 user">
-                    <Link href="dangnhap" className=""> <i className="fas fa-user-circle icon-user"></i></Link>
-                    <Link href="giohang" className=""><i className="fas fa-shopping-cart icon-cart"></i></Link>
+                    <Link to="/dangnhap" className=""> <i className="fas fa-user-circle icon-user"></i></Link>
+                    <Link to="/giohang" className=""><i className="fas fa-shopping-cart icon-cart"></i></Link>
                 </div>
             </div>
         </div>
