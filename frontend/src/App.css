@@ -1,7 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,700&family=Roboto:wght@300;500&display=swap");
+
+:root {
+    --white-color: #fff;
+    --black-color:#000;
+    --text-color:#333;
+    --header-height: 160px;
+    --hover-color:#ce3f3f;
+    --blue-color: blue;
+    --green-color: green;
+    --gray-color: gray;
+    --yellow-color:yellow;
+    --red-color: red;
+    --orange-color:orange;
+    --violet-color:violet;
+}
 * {
-    margin: 0;
-    padding: 0;
-    font-family: tahoma, arial, sans-serif, 'lucida grande';
+    box-sizing: inherit;/*kế thừa*/
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;/*bỏ dấu gạch chân của chữ*/
+    box-sizing: border-box;
+}
+.green {
+    background-color: green;
+}
+.white {
+    background-color: #fff;
+}
+.black {
+    background-color: #000;
+}
+.blue {
+    background-color: blue;
+}
+.gray {
+    background-color: gray;
+}
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
+}
+.orange {
+    background-color: orange;
+}
+.violet {
+    background-color: violet;
+}
+.display {
+    display: block;
+    transition: 0.8s;
+}
+.undisplay {
+    display: none;
+    transition: 0.8s;
+}
+.white-color {
+    color: #fff !important;
+}
+.btn-buynow:hover > .fi-rs-arrow-right {
+    color: #000 !important;
+}
+body {
+    overflow-x: hidden;
+}
+.custom__name-product {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-bottom:  10px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: var(--black-color);
+}
+.title-news {
+    font-size: 18px;
+}
+.card {
+    border-radius: unset !important;
+}
+.img1 {
+    display: block;
+}
+.img2 {
+    display: none;
+}
+.card:hover .img2 {
+    display: block;
+}
+.card:hover .img1 {
+    display: none;
+}
+.product__new-item {
+    color: var(--black-color);
+}
+.product__new-item:hover {
+    text-decoration: none;
+    color: var(--black-color);
+}
+.card-title {
+    font-size: 18px;
+}
+.right {
+    float: right;
+}
+
+.App {
+   
+    font-family: "Poppins", sans-serif;
 }
 
 /* CSS của menu */
@@ -14,19 +126,22 @@
     height: 80px;
 
 }
+
 .header__logo {
-height: 100%;
+    height: 100%;
 }
 
 .div-img {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin:auto;
+    margin: auto;
 }
-.div-img .trangchu{
+
+.div-img .trangchu {
     display: none;
 }
+
 /* .header__navbar .trangchu{
     display: block;
 } */
@@ -45,7 +160,7 @@ height: 100%;
     margin-top: 24px;
     height: 46px;
     display: flex;
-  
+
 }
 
 
@@ -60,7 +175,8 @@ height: 100%;
     padding: 10px 0 15px 0;
     cursor: pointer;
 }
-.trangchu{
+
+.trangchu {
     margin: 0 12px;
     font-size: 18px;
     padding: 10px 0 15px 0;
@@ -68,6 +184,7 @@ height: 100%;
     color: black;
     text-decoration: none;
 }
+
 .navbar__item a {
     text-decoration: none;
     color: black;
@@ -78,7 +195,7 @@ height: 100%;
     text-decoration: none;
 }
 
-.header-active{
+.header-active {
     position: fixed;
     top: 0;
     left: 0;
@@ -88,21 +205,26 @@ height: 100%;
     padding: 0;
 
 }
-.header-active .div-img img{
+
+.header-active .div-img img {
     display: none;
 }
-.header-active .div-img .trangchu{
+
+.header-active .div-img .trangchu {
     display: block;
     font-size: 24px;
     font-weight: bold;
 }
-.header-active .header__navbar .navbar__items{
+
+.header-active .header__navbar .navbar__items {
     width: 100%;
     justify-content: space-around;
 }
-.header-active .header__navbar .trangchu{
+
+.header-active .header__navbar .trangchu {
     display: none;
 }
+
 .banner {
     width: 100%;
 }
@@ -144,14 +266,14 @@ height: 100%;
 
 
 /* CSS của phần khung thông tin khách hàng */
-.txt{
+.txt {
     padding-left: 470px;
     font-size: 25px;
     margin-top: 15px;
 }
 
 
-.area{
+.area {
     margin-left: 470px;
     border: 1px solid;
     border-radius: 5px;
@@ -159,13 +281,13 @@ height: 100%;
 }
 
 /* CSS của footer */
-.about{
+.about {
     margin-top: 50px;
     width: 400px;
     float: left;
 }
 
-.about #trai{
+.about #trai {
     width: 240px;
     height: 38px;
     margin-right: 20px;
@@ -173,7 +295,7 @@ height: 100%;
     margin-top: 15px;
 }
 
-.about #phai{
+.about #phai {
     font-size: 16px;
     width: 245px;
     float: left;
@@ -181,61 +303,62 @@ height: 100%;
 
 }
 
-.contact{
+.contact {
     margin-top: 50px;
     width: 300px;
     float: left;
 }
 
-.contact p{
+.contact p {
     font-size: 16px;
     margin-top: 10px;
     color: #6c6666;
 }
 
-.contact span{
+.contact span {
     font-size: 20px;
     font-weight: bold;
 }
 
-.link{
+.link {
     margin-top: 50px;
     width: 500px;
     float: left;
 }
 
-.link p{
-    font-size: 16px ;
+.link p {
+    font-size: 16px;
     margin-top: 45px;
     color: #6c6666;
 }
 
 
-.thongtin{
-  margin: 24px 0 32px 0;
+.thongtin {
+    margin: 24px 0 32px 0;
 }
 
-.select-swap{
-    display: flex;
-}
-.product__amount-item{
+.select-swap {
     display: flex;
 }
 
+.product__amount-item {
+    display: flex;
+}
 
 
 
 
-  /* ======= Toast message ======== */
 
-  #toast {
+/* ======= Toast message ======== */
+
+#toast {
     position: fixed;
     top: 32px;
     right: 32px;
     z-index: 999999;
-  }
-  
-  .toast {
+}
+
+.toast {
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -247,90 +370,92 @@ height: 100%;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
     transition: all linear 0.3s;
     opacity: 1;
-  }
-  
-  @keyframes slideInLeft {
+}
+
+@keyframes slideInLeft {
     from {
-      opacity: 0;
-      transform: translateX(calc(100% + 32px));
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
     }
+
     to {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
-  }
-  
-  @keyframes fadeOut {
+}
+
+@keyframes fadeOut {
     to {
-      opacity: 0;
+        opacity: 0;
     }
-  }
-  
-  .toast--success {
+}
+
+.toast--success {
     border-color: #47d864;
-  }
-  
-  .toast--success .toast__icon {
+}
+
+.toast--success .toast__icon {
     color: #47d864;
-  }
-  
-  .toast--info {
+}
+
+.toast--info {
     border-color: #2f86eb;
-  }
-  
-  .toast--info .toast__icon {
+}
+
+.toast--info .toast__icon {
     color: #2f86eb;
-  }
-  
-  .toast--warning {
+}
+
+.toast--warning {
     border-color: #ffc021;
-  }
-  
-  .toast--warning .toast__icon {
+}
+
+.toast--warning .toast__icon {
     color: #ffc021;
-  }
-  
-  .toast--error {
+}
+
+.toast--error {
     border-color: #ff623d;
-  }
-  
-  .toast--error .toast__icon {
+}
+
+.toast--error .toast__icon {
     color: #ff623d;
-  }
-  
-  .toast + .toast {
+}
+
+.toast+.toast {
     margin-top: 24px;
-  }
-  
-  .toast__icon {
+}
+
+.toast__icon {
     font-size: 24px;
-  }
-  
-  .toast__icon,
-  .toast__close {
+}
+
+.toast__icon,
+.toast__close {
     padding: 0 16px;
-  }
-  
-  .toast__body {
+}
+
+.toast__body {
     flex-grow: 1;
-  }
-  
-  .toast__title {
+}
+
+.toast__title {
     font-size: 16px;
     font-weight: 600;
     color: #333;
-  }
-  
-  .toast__msg {
+}
+
+.toast__msg {
     font-size: 14px;
     color: #888;
     margin-top: 6px;
     line-height: 1.5;
-  }
-  
-  .toast__close {
+}
+
+.toast__close {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
-  }
-  
+}
+
+
